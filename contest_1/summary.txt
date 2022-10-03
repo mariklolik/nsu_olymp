@@ -1,0 +1,41 @@
+Контест посвящен производным типам языка cpp
+Типы данных и их использование по задачам
+1.Вектор
+    #include <vector>
+    #include <algorithm>
+    vector<int> v;
+    v.push_back(temp);
+    sort(v.begin(), v.end(), cmp);
+    reverse(v.begin(), v.end());
+
+2.Вложенный вектор
+    vector<vector<int>> v;
+    int temp = v[a][v[a].size() - 1];
+    v[a].pop_back();
+3.Строки
+    vector<string> v;
+    bool cmp(string& a, string& b){
+    return a > b;
+        }
+    string a, b;
+        cin >> a >> b;
+        v.push_back(a + b);
+        v.push_back(b + a);
+4.Пары
+    #include <utility>
+    pair<double, double>
+    i.first << ' ' << i.second
+5.Множество(сет)
+    #include <set>
+    set<long long int> a;
+    a.insert(num)
+6.Мультимножество(сет и элементы могут повторяться)
+    multiset<long long int> s;
+    s.insert(num);
+    *s.find(num) == num
+    s.erase(s.find(num));
+7.Мапа(словарь)
+    #include <map>
+    map<string, vector<int64_t>> m;
+    m[a].push_back(b);
+    for(auto& [key, value]:m){
